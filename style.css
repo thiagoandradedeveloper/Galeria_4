@@ -19,7 +19,7 @@ body{
 }
 #container{
     width: 100%;
-    height: 340px;
+    height: 380px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -34,10 +34,11 @@ body{
         height: 300px;
         top: 20px;
         z-index: 1;
-        transition: 1500ms;
+        transition: 300ms;
         border-radius: 15px;
         box-shadow: 5px 5px 20px #000;
         cursor: pointer;
+        border: 2px solid black;
     }
     img:first-of-type{
         margin-left: calc(-100% + var(--position));
@@ -70,4 +71,27 @@ body{
 h1{
     padding: 15px;
     text-align: center;
+}
+.containerButtons{
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    span{
+        position: relative;
+        border: 2px solid #000;
+        margin: 0 5px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background: red;
+        box-shadow: #000 3px 3px 8px;
+    }
 }
